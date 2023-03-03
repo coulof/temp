@@ -2,10 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/dell/powerflex" {
-  version     = "0.0.1"
-  constraints = "0.0.1"
+  version     = "1.0.0"
+  constraints = "1.0.0"
   hashes = [
-    "h1:qyczqJ5zEN1icwSnPtZo/k9ew+Np/+1IVaYc+c5ZxcM=",
+    "h1:jH20mFujxk6YucSr4S4B3n21tBZxpV77ZfgQ/xWSCOw=",
+    "zh:14bae6f0204a29fe53c502470de91689337486f16c5fce99a4f470fe8efc240b",
+    "zh:407e102dc65a99cfada5e712c57c708ee8b56c89e8e8b637db2faf24dbdd6beb",
+    "zh:472668062f3abccbce49b4047740482f9bf88eafca82cd581669d47846a4e9bb",
+    "zh:4e94ca4b3eb7257a018b0000203c4c372b245694b69d0de182e60e30adc54262",
+    "zh:4ece34030fc3737c15f64bcfad6ac8908689a73735563991a31755bff7eefa7c",
+    "zh:5ad462eeb6e343824b78e671b3ffd2da38fce8b436c31a6e8103f04fd6ad718f",
+    "zh:779d041b3cedc2c156e3388ac6e331db9773db96c8b4a2a758154009741ae4dd",
+    "zh:8bc8f61e496e96c81c46e1aa59bf2155b6acc80db1ea462f2ddd665748fcda7f",
+    "zh:954e19bbd8f8efac1bee0842a362206ba27a10c72d44543c17726df7a90f8d35",
+    "zh:9b95925ab58b8799f2848737a761d669aa1ce08fab1cd7911f3f70f5691b90dd",
+    "zh:d125837762df16ce9d20f00b91c67230b3b4731e1c4183812a9d315ab787b75b",
   ]
 }
 

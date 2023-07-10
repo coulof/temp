@@ -1,0 +1,24 @@
+resources:
+- admin-server-deployment.yaml
+- admin-server-tcp-service.yaml
+- api-gateway-deployment.yaml
+- api-gateway-tcp-service.yaml
+- config-server-deployment.yaml
+- config-server-tcp-service.yaml
+- customers-service-deployment.yaml
+- customers-service-service.yaml
+- discovery-server-deployment.yaml
+- discovery-server-service.yaml
+- docker-compose.yml
+- grafana-server-deployment.yaml
+- grafana-server-tcp-service.yaml
+- mysql-secret.yaml
+- prometheus-server-deployment.yaml
+- prometheus-server-service.yaml
+- tracing-server-deployment.yaml
+- tracing-server-service.yaml
+- vets-service-deployment.yaml
+- vets-service-service.yaml
+- visits-service-deployment.yaml
+- visits-service-service.yaml
+- 

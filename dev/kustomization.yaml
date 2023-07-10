@@ -1,0 +1,8 @@
+resources:
+- namespace.yaml
+- ../base
+namespace: dev
+images:
+- name: springcommunity/spring-petclinic-config-server
+  newName: somewhere-else/spring-petclinic-config-server
+  newTag: dev

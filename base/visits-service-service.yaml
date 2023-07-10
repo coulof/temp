@@ -15,5 +15,4 @@ spec:
       targetPort: 8082
   selector:
     io.kompose.service: visits-service
-status:
-  loadBalancer: {}
+type: LoadBalancer

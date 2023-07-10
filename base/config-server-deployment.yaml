@@ -26,7 +26,10 @@ spec:
         io.kompose.service: config-server
     spec:
       containers:
-        - image: springcommunity/spring-petclinic-config-server
+        - env:
+            - name: spring.datasource.url
+              value: jdbc:mysql://database:3306
+          image: springcommunity/spring-petclinic-config-server
           name: config-server
           ports:
             - containerPort: 8888
@@ -34,4 +37,4 @@ spec:
             limits:
               memory: "536870912"
       restartPolicy: Always
-status: {}
+

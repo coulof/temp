@@ -15,5 +15,4 @@ spec:
       targetPort: 9411
   selector:
     io.kompose.service: tracing-server
-status:
-  loadBalancer: {}
+  type: LoadBalancer

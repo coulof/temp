@@ -43,6 +43,10 @@ If there are different images in prod vs dev or else, I put an example of an ima
 
 Not tested !!!!
 
+Run the application as a `Deployment` but should be a `StatefulSet` ; the pb is running mysql with `sts` and multiple replicas needs quite some boilerplate : https://kubernetes.io/docs/tasks/run-application/run-replicated-stateful-application/ ...
+
+There is no equivalent to Docker's `depends-on` in kubernetes ; a correct way is to use health-probe on service startup.
+
 ## Sources
 - https://kubernetes.io/docs/tasks/configure-pod-container/translate-compose-kubernetes/
 - https://github.com/kubernetes-sigs/kustomize/tree/master/examples/multibases

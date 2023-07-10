@@ -3,12 +3,11 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: kompose convert
-    kompose.service.type: LoadBalancer
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
-    io.kompose.service: grafana-server-tcp
-  name: grafana-server-tcp
+    io.kompose.service: grafana-server
+  name: grafana-server
 spec:
   ports:
     - name: "3000"
@@ -16,6 +15,4 @@ spec:
       targetPort: 3000
   selector:
     io.kompose.service: grafana-server
-  type: LoadBalancer
-status:
-  loadBalancer: {}
+type: LoadBalancer

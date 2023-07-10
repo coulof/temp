@@ -32,12 +32,8 @@ spec:
             - java
             - org.springframework.boot.loader.JarLauncher
           env:
-            - name: MYSQL_PASSWORD
-              value: toor
-            - name: MYSQL_URL
-              value: jdbc:mysql://mysql-service:3306/mydatabase
-            - name: MYSQL_USERNAME
-              value: root
+            - name: 'SPRING_PROFILES_ACTIVE'
+              value: 'docker,mysql'
           image: springcommunity/spring-petclinic-customers-service
           name: customers-service
           ports:
@@ -46,4 +42,4 @@ spec:
             limits:
               memory: "536870912"
       restartPolicy: Always
-status: {}
+

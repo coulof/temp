@@ -17,5 +17,4 @@ spec:
   selector:
     io.kompose.service: admin-server
   type: LoadBalancer
-status:
-  loadBalancer: {}
+type: LoadBalancer

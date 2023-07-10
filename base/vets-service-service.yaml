@@ -15,5 +15,4 @@ spec:
       targetPort: 8083
   selector:
     io.kompose.service: vets-service
-status:
-  loadBalancer: {}
+type: LoadBalancer

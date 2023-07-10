@@ -17,5 +17,4 @@ spec:
   selector:
     io.kompose.service: api-gateway
   type: LoadBalancer
-status:
-  loadBalancer: {}
+type: LoadBalancer

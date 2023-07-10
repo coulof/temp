@@ -6,13 +6,13 @@ metadata:
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
-    io.kompose.service: customers-service
-  name: customers-service
+    io.kompose.service: admin-server
+  name: admin-server
 spec:
   ports:
-    - name: "8081"
-      port: 8081
-      targetPort: 8081
+    - name: "9090"
+      port: 9090
+      targetPort: 9090
   selector:
-    io.kompose.service: customers-service
+    io.kompose.service: admin-server
 type: LoadBalancer

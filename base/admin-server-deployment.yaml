@@ -33,6 +33,9 @@ spec:
             - --
             - java
             - org.springframework.boot.loader.JarLauncher
+          env:
+            - name: 'SPRING_PROFILES_ACTIVE'
+              value: 'docker,mysql'
           image: springcommunity/spring-petclinic-admin-server
           name: admin-server
           ports:
@@ -41,4 +44,4 @@ spec:
             limits:
               memory: "536870912"
       restartPolicy: Always
-status: {}
+
